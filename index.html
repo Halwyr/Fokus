@@ -173,7 +173,15 @@
           Adobe Firefly.Desenvolvido por Alura.
         </p>
       </footer>
+      <div class="popup-overlay" id="overlay" onclick="closePopup()"></div>
+      <div class="popup" id="popup">
+        <h2 id="popup-title"></h2>
+        <p id="popup-message"></p>
+        <button class="button-fechar" onclick="closePopup()">Fechar</button>
+      </div>
     </main>
-    <script src="app/script.js" defer></script>
+    <script src="app/popup.js"></script>
+    <script src="app/script.js"></script>
+    <script src="app/prompt.js"></script>
   </body>
 </html>

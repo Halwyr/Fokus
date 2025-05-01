@@ -18,7 +18,7 @@ const audioPlay = new Audio("/sons/play.wav");
 const audioPause = new Audio("/sons/pause.mp3");
 const audioTimeFineshed = new Audio("./sons/beep.mp3");
 
-let elapsedTimeInSecond = 1500;
+let elapsedTimeInSecond = 5;
 let intervalId = null;
 
 music.loop = true;
@@ -80,7 +80,10 @@ function changeContext(contexto) {
 const countdown = () => {
   if (elapsedTimeInSecond <= 0) {
     audioTimeFineshed.play();
-    alert("Tempo finalizado!");
+    showPopup(
+      "Tempo finalizado!",
+      "Você deu o seu melhor, agora aproveite um merecido descanso."
+    );
     const activeFocus = html.getAttribute("data-contexto") == "foco";
     if (activeFocus) {
       const event = new CustomEvent("FocusFinished");

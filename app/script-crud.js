@@ -48,11 +48,13 @@ function createTaskElement(task) {
   const button = document.createElement("button");
   button.classList.add("app_button-edit");
 
-  button.onclick = () => {
-    const newDescription = prompt("Qual é o novo nome da tarefa?");
+  button.onclick = async () => {
+    const newDescription = await customPrompt("Qual é o novo nome da tarefa?");
     if (!newDescription) {
-      alert("É necessário inserir um novo nome para a nova tarefa.");
-      return;
+      showPopup(
+        "Atenção!",
+        "É necessário inserir um novo nome para a nova tarefa."
+      );
     } else {
       paragraph.textContent = newDescription;
       task.description = newDescription;
