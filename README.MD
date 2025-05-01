@@ -37,8 +37,10 @@ Fokus é um aplicativo web simples e direto ao ponto, desenvolvido para te ajuda
 ```
 Fokus/
 └── app/
-    ├── script.js
-    └── script-crud.js
+    ├── popup.js
+    └── prompt.js
+    ├── script-crud.js
+    └── script.js
 ├── assets/
 ├── sons/
 ├── styles/
@@ -52,11 +54,11 @@ Fokus/
 
 ## 💡 Possíveis Melhorias Futuras
 
-- [ ] Adição de Pop-ups
-- [ ] Estilização de uma janela para o usuário renomear a tarefa
+- [x] Adição de Pop-ups
+- [x] Estilização de uma janela para o usuário renomear a tarefa
 - [ ] Temas personalizáveis (modo escuro, etc.)
 - [ ] Uma nova aba para o usuário digitar o tempo
-- [ ] Adicionar validações
+- [x] Adicionar validações
 
 ---
 
