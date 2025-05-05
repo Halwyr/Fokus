@@ -72,7 +72,7 @@ Esse projeto foi um campo de treino para:
 
 ---
 
-## 🪪 Licença
+## 🔑 Licença
 
 Este projeto é livre para estudo e modificação pessoal.  
 Sinta-se à vontade para evoluí-lo, mas não clone sem alma. 😉
